@@ -6,6 +6,8 @@
 	<title>Skilaverkefni 4</title>
 </head>
 	<body>
-		
+		<div class="cont">
+			bgnhh
+		</div>
 	</body>
 </html>
