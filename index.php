@@ -8,14 +8,24 @@
 	<title>Skilaverkefni 4</title>
 </head>
 	<body>
+	<input type="checkbox" id="toggle">
+			<label for="toggle">&#9776;</label>
+			<nav class="cont3">
+				<div class="navv">
+					<a href="http://tsuts.tskoli.is/2t/2605993489/VSH2B/Skilaverkefni%204/index.php"><nav class="navi navi-1 navi-y">Home</nav></a>
+					<nav class="navi navi-2 navi-y">Create account</nav>
+					<nav class="navi navi-3 navi-y">Login</nav>
+					<nav class="navi navi-4 navi-y">Activities</nav>
+				</div>
+			</nav>
 	<div class="contallt">
 		<h1 class="tit">gamescom 2017</h1>
 		<div class="cont">
-			<div class="cont3">
-				<span class="tital">So what is gamescom?</span>
+			<div class="cont3text">
+				<span class="tital"><a href="https://en.wikipedia.org/wiki/Gamescom" target="blank">So what is gamescom?</a></span>
 				<p>Gamescom is the world's largest gaming event, (measured by exhibition space and number of visitors) with 345,000 visitors, more than 6,000 journalists and 700 exhibitors from 88 countries attending the show in its sixth year.</p>
 			</div>
-			<div class="cont3">
+			<div class="cont3text">
 				 <span class="tital">On the current line-up we have</span>
 				 <ul>
 				 	<li>A conference by Bethesda (08:15)</li>
@@ -24,16 +34,6 @@
 				 </ul>
 				 And more, but we don't want to spoil the show, there will be short breaks between each event so you can walk around the booths and check everything out.
 			</div>
-			<input type="checkbox" id="toggle">
-			<label for="toggle">&#9776;</label>
-			<nav class="cont3 cont4">
-				<div class="navv">
-				<nav class="navi navi-1 navi-y">Verkefni 5</nav>
-				<nav class="navi navi-2 navi-y">Verkefni 5</nav>
-				<nav class="navi navi-3 navi-y">Verkefni 5</nav>
-				<nav class="navi navi-4 navi-y">Verkefni 5</nav>
-				</div>
-			</nav>
 		</div>
 	</div>
 	</body>
