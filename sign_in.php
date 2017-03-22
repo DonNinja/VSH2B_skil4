@@ -1,3 +1,16 @@
+<?php
+$servername = "tsuts.tskoli.is";
+		$username = "2605993489";
+		$password = "mypassword";
+		$dbname = "2605993489_gamescom";
+
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Það tókst ekki að connect-a við database-ið: " . $conn->connect_error);
+		}
+		?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +20,7 @@
 	<link rel="icon" href="http://www.gamescom-cologne.com/redaktionell/gamescom_1/img_32/layout_25/gamescom_favicon_32x32.jpg">
 	<title>Login</title>
 </head>
-<body>
+<body class="signa">
 		<input type="checkbox" id="toggle">
 			<label for="toggle" class="lable">&#9776;</label>
 			<nav class="cont3">
@@ -18,7 +31,7 @@
 					<a href="sign_up.php"><nav class="navi navi-4 navi-y">Sign up</nav></a>
 				</div>
 			</nav>
-	<form method="post" action="">
+	<form method="post" action="login.php">
 		<p><h1>Sign in here</h1></p>
 	    <p>
 	        <label for="username">Username:</label>

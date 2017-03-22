@@ -1,3 +1,16 @@
+<?php
+		$servername = "tsuts.tskoli.is";
+		$username = "2605993489";
+		$password = "mypassword";
+		$dbname = "2605993489_gamescom";
+
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Það tókst ekki að connect-a við database-ið: " . $conn->connect_error);
+		}
+		?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,10 +25,13 @@
 			<label for="toggle" class="lable">&#9776;</label>
 			<nav class="cont3">
 				<div class="navv">
-					<a href="index.php"><nav class="navi navi-1 navi-y">Home</nav></a>
-					<a href="sign_in.php"><nav class="navi navi-2 navi-y">Sign in</nav></a>
-					<a href="hlutir.php"><nav class="navi navi-2 navi-y">Activities</nav></a>
-					<a href="sign_up.php"><nav class="navi navi-4 navi-y">Sign up</nav></a>
+					<a href="index.php"><nav class="navi">Home</nav></a>
+					<a href="sign_in.php"><nav class="navi">Sign in</nav></a>
+					<a href="hlutir.php"><nav class="navi">Activities</nav></a>
+					<a href="sign_up.php"><nav class="navi">Sign up</nav></a>
+					<?php if (condition) {
+						# code...
+					} ?>
 				</div>
 			</nav>
 	<div class="contallt">
@@ -26,13 +42,15 @@
 				<p>Gamescom is the world's largest gaming event, (measured by exhibition space and number of visitors) with 345,000 visitors, more than 6,000 journalists and 700 exhibitors from 88 countries attending the show in its sixth year.</p>
 			</div>
 			<div class="cont3text">
+				<span class="tital"><a href="https://en.wikipedia.org/wiki/Gamescom" target="blank">When is it?</a></span>
+				<p>Currently gamescom is set to take place from the 23rd until the 28th of August 2017</p>
+			</div>
+			<div class="cont3text">
 				 <span class="tital">On the current line-up we have</span>
 				 <ul>
-				 	<li>A conference by Bethesda (08:15)</li>
-				 	<li>A show put on by Nintendo (09:00)</li>
-				 	<li>Microsoft will show their new console (10:30)</li>
+				 	<li>Booth to try a few upcoming games.</li>
+				 	<li>Booth to try a few hardware items(VR, the next upcoming consoles)</li>
 				 </ul>
-				 And more, but we don't want to spoil the show, there will be short breaks between each event so you can walk around the booths and check everything out.
 			</div>
 		</div>
 	</div>
