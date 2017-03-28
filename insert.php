@@ -13,8 +13,19 @@ $servername = "tsuts.tskoli.is";
 
 		$nofn = $_REQUEST['username'];
 		$pass = $_REQUEST['password'];
+		$query = "SELECT 'username' FROM user WHERE username = '$nofn' AND password = '$pass'";
+		$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
-		$sql = "INSERT INTO user (active, username, password) VALUES (0, '$nofn', '$pass');";
+		if (mysqli_num_rows($result) == 1)
+		{
+			echo '<script language="javascript">';
+			echo 'alert("This username is taken")';
+			echo '</script>';
+			echo "<script>setTimeout(\"location.href = 'hlutir.php';\",1500);</script>";
+		}
+		elseif (mysqli_num_rows($result) == 0) {
+			$sql = "INSERT INTO user (active, username, password) VALUES (0, '$nofn', '$pass');";
+		}
 		$conn -> query($sql);
 
 		sleep(1);

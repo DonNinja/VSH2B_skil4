@@ -79,7 +79,7 @@ body {
 
 	}
 	#toggle:checked ~ .cont3 {
-		max-height: 8em;
+		max-height: 10em;
 		width: 100%;
 		position: fixed;
 		bottom: 2em;

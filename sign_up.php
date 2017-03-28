@@ -1,5 +1,5 @@
 <?php
-$servername = "tsuts.tskoli.is";
+		$servername = "tsuts.tskoli.is";
 		$username = "2605993489";
 		$password = "mypassword";
 		$dbname = "2605993489_gamescom";
@@ -10,6 +10,7 @@ $servername = "tsuts.tskoli.is";
 		if ($conn->connect_error) {
 		    die("Það tókst ekki að connect-a við database-ið: " . $conn->connect_error);
 		}
+		session_start();
 		?>
 <!DOCTYPE html>
 <html>
@@ -29,6 +30,7 @@ $servername = "tsuts.tskoli.is";
 					<a href="sign_in.php"><nav class="navi navi-2 navi-y">Sign in</nav></a>
 					<a href="hlutir.php"><nav class="navi navi-2 navi-y">Activities</nav></a>
 					<a href="sign_up.php"><nav class="navi navi-4 navi-y">Sign up</nav></a>
+					<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {echo '<a href="log_out.php"><nav class="navi navi-4 navi-y">Sign out</nav></a>';} ?>
 				</div>
 			</nav>
 	<form method="post" action="insert.php">

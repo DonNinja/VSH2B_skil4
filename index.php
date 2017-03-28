@@ -10,6 +10,7 @@
 		if ($conn->connect_error) {
 		    die("Það tókst ekki að connect-a við database-ið: " . $conn->connect_error);
 		}
+		session_start();
 		?>
 <!DOCTYPE html>
 <html>
@@ -27,11 +28,9 @@
 				<div class="navv">
 					<a href="index.php"><nav class="navi">Home</nav></a>
 					<a href="sign_in.php"><nav class="navi">Sign in</nav></a>
-					<a href="hlutir.php"><nav class="navi">Activities</nav></a>
+					<a href="join_activity.php"><nav class="navi">Activities</nav></a>
 					<a href="sign_up.php"><nav class="navi">Sign up</nav></a>
-					<?php if (condition) {
-						# code...
-					} ?>
+					<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {echo '<a href="log_out.php"><nav class="navi navi-4 navi-y">Sign out</nav></a>';} ?>
 				</div>
 			</nav>
 	<div class="contallt">
