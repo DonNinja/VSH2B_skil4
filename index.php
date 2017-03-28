@@ -28,7 +28,7 @@
 				<div class="navv">
 					<a href="index.php"><nav class="navi">Home</nav></a>
 					<a href="sign_in.php"><nav class="navi">Sign in</nav></a>
-					<a href="join_activity.php"><nav class="navi">Activities</nav></a>
+					<a href="hlutir.php"><nav class="navi">Activities</nav></a>
 					<a href="sign_up.php"><nav class="navi">Sign up</nav></a>
 					<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {echo '<a href="log_out.php"><nav class="navi navi-4 navi-y">Sign out</nav></a>';} ?>
 				</div>
@@ -47,8 +47,8 @@
 			<div class="cont3text">
 				 <span class="tital">On the current line-up we have</span>
 				 <ul>
-				 	<li>Booth to try a few upcoming games.</li>
-				 	<li>Booth to try a few hardware items(VR, the next upcoming consoles)</li>
+				 	<li>Booths to try a few upcoming games.</li>
+				 	<li>Booths to try a few hardware items(VR, the next upcoming consoles)</li>
 				 </ul>
 			</div>
 		</div>

@@ -35,6 +35,21 @@ $servername = "tsuts.tskoli.is";
 				</div>
 			</nav>
 
-		
+		<div class="cont">
+			<form method="post" action="join_activity.php">
+			    <p>
+				    Check out Blizzard's new and upcoming games.
+			        <button name="atburdur" id="atburdur-1" type="submit" value="1">Sign up</button>
+			    </p>
+			    <p>
+			    	Check out Bethesda's new and upcoming games.
+			        <button name="atburdur" id="atburdur-2" type="submit" value="2">Sign up</button>
+			    </p>
+			    <p>
+			    	Get food (Payment is 25$)
+			        <button name="atburdur" id="atburdur-3" type="submit" value="3">Sign up</button>
+			    </p>
+			</form>
+		</div>
 </body>
 </html>
