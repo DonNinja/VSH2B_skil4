@@ -115,12 +115,184 @@ body {
 		border: 1px black solid;
 		border-radius: 20px;
 		text-align: center;
-		margin-top: 60%;
+		margin-top: 55%;
 	}
 	a:active {
 		text-decoration: none;
 	}
+	button {
+		display: block;
+		margin: auto;
+		margin-top: .5em;
+	}
 }
-@media all and (max-width: 60em;) {
-
+@media all and (min-width: 30em) and (max-width: 769px) {
+	.contallt {
+		max-width: 80%;
+		margin-top: 3em;
+	}
+	.tit {
+		background: rgba(0, 191, 255, 1);
+		font-size: 150%;
+	}
+	.cont3, .cont3text {
+		background: rgba(0, 191, 255, 1);
+		margin-top: 0em;
+	}
+	.cont3text {
+		padding: .5em;
+	}
+	.cont3 {
+		background: rgba(0, 191, 255, 0.9);
+	}
+	.tital {
+		font-size: 115%;
+		text-align: center;
+		text-decoration: underline;
+	}
+	#toggle {
+		display: none;
+	}
+	.lable, .navv {
+	  border: 1px solid #cecfd5;
+	  height: 100%;
+	}
+	.lable {
+	  background-color: black;
+	  color: #ff7b29;
+	  cursor: pointer;
+	  font-size: 18px;
+	  padding: 5px 9px;
+	  top: 0;
+	  left: 0;
+	  text-align: center;
+	  font-stretch: 150%;
+	  width: 20px;
+	  height: 22px;
+	  position: fixed;
+	}
+	.lable:hover {
+	  color: #ff7b29;
+	}
+	#toggle:checked + .lable {
+	  box-shadow: inset 0 0px 0px rgb(0, 0, 0);
+	  color: white;
+	  border-right: 1px solid white;
+	}
+	.cont3 {
+		position: fixed;
+		top: 0;
+		left: 40px;
+		width: 0;
+	  	max-height: 100%;
+	 	overflow: hidden;
+		transition: all 1.5s ease;
+		border: none;		
+	}
+	#toggle:checked ~ .cont3 {
+		width: 20%;
+		position: fixed;
+		top: 0;
+		left: 40px;
+		transition: all 1.5s ease;
+	}
+	#toggle:checked ~ nav {
+		text-align: center;
+		border-right: 1px solid white;	
+	}
+	.navv {
+		list-style: none;
+		margin: 0px 0 0 0;
+		padding: 0;
+		width: 100%;
+	}
+	nav {
+		text-align: center;
+	 	display: block;
+		border: 1px solid #cecfd5;
+	}
+	.navi:last-child {
+	 	border-bottom: 0;
+	}
+	.navi {
+		height: 80px;
+		text-align: center;
+		line-height: 80px;
+		vertical-align: middle;
+	}
+	form {
+		background: rgba(0, 191, 255, 1);
+		padding: 2em;
+		border: 1px black solid;
+		border-radius: 20px;
+		text-align: center;
+		margin-top: 10%;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	button {
+		display: block;
+		margin: auto;
+		margin-top: .5em;
+	}
+}
+@media all and (min-width: 769px) and (max-width: 1030px) {
+	body {
+		display: flex;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.tit {
+		max-width: 100%;
+	}
+	.cont {
+		position: relative;
+		max-width: 60%;
+		margin-top: 3em;
+		flex: 1;
+	}
+	.tit {
+		background: rgba(0, 191, 255, 1);
+		font-size: 150%;
+	}
+	.cont3, .cont3text {
+		background: rgba(0, 191, 255, 1);
+		margin-top: 0em;
+	}
+	.cont3text {
+		padding: .5em;
+	}
+	.cont3 {
+		background: rgba(0, 191, 255, 1);
+		max-width: 20%;
+		flex: 2;
+	}
+	.tital {
+		font-size: 115%;
+		text-align: center;
+		text-decoration: underline;
+	}
+	.lable, #toggle {
+		display: none;
+	}
+	.navv {
+		list-style: none;
+		margin: 0px 0 0 0;
+		padding: 0;
+		width: 100%;
+	}
+	nav {
+		max-width: 20%;
+		text-align: center;
+	 	height: 100%;
+	 	display: block;
+		border: 1px solid #cecfd5;
+	}
+	.navi {
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		vertical-align: middle;
+	}
 }

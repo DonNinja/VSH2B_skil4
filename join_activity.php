@@ -35,10 +35,10 @@
 				}
 			}
 
-			$query = "SELECT 'id_user', 'id_activity' FROM skraning INNER JOIN user ON 'user.id' = 'skraning.id_user' INNER JOIN activity ON 'activity.ID' = 'skraning.id_activity' AND 'user.username' = $username2 WHERE 'user.id' = $thing1 AND 'activity.id' = $thing2";
+			$query = "SELECT id_user, id_activity FROM skraning INNER JOIN user ON user.id = skraning.id_user INNER JOIN activity ON activity.ID = skraning.id_activity AND user.username = $username2 WHERE user.id = $thing1 AND activity.id = $thing2";
 			$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
-			if (mysqli_num_rows($result) == 1) {
+			if (mysqli_num_rows($result) >= 1) {
 				echo '<script language="javascript">';
 				echo 'alert("You have already been signed up for this activity")';
 				echo '</script>';
