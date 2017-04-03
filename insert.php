@@ -1,5 +1,5 @@
 <?php
-$servername = "tsuts.tskoli.is";
+		$servername = "tsuts.tskoli.is";
 		$username = "2605993489";
 		$password = "mypassword";
 		$dbname = "2605993489_gamescom";
@@ -19,16 +19,17 @@ $servername = "tsuts.tskoli.is";
 		if (mysqli_num_rows($result) == 1)
 		{
 			echo '<script language="javascript">';
-			echo 'alert("This username is taken")';
+			echo 'alert("This username is already taken")';
 			echo '</script>';
-			echo "<script>setTimeout(\"location.href = 'hlutir.php';\",1500);</script>";
+			echo "<script>setTimeout(\"location.href = 'sign_up.php';\",1500);</script>";
 		}
-		elseif (mysqli_num_rows($result) == 0) {
-			$sql = "INSERT INTO user (active, username, password) VALUES (0, '$nofn', '$pass');";
-		}
-		$conn -> query($sql);
 
-		sleep(1);
-		header("Location: index.php");
-		exit();
+		else {
+			$sql = "INSERT INTO user (username, password) VALUES ('$nofn', '$pass');";
+			$conn -> query($sql);
+			echo '<script language="javascript">';
+			echo 'alert("You have been signed up")';
+			echo '</script>';
+			echo "<script>setTimeout(\"location.href = 'index.php';\",1500);</script>";
+		}
 		?>

@@ -21,7 +21,7 @@
 	<link rel="icon" href="http://www.gamescom-cologne.com/redaktionell/gamescom_1/img_32/layout_25/gamescom_favicon_32x32.jpg">
 	<title>Login</title>
 </head>
-<body class="signa">
+<body class="signa" style="line-height: 100%;">
 		<input type="checkbox" id="toggle">
 			<label for="toggle" class="lable">&#9776;</label>
 			<nav class="cont3">
@@ -35,7 +35,7 @@
 			</nav>
 	<form method="post" action="login.php">
 		<p><h1>Sign in here</h1></p>
-	    <p>
+	    <p>	
 	        <label for="username">Username:</label>
 	        <input type="text" name="username" id="username" required>
 	        </p>

@@ -22,19 +22,10 @@
 	<title>Skilaverkefni 4</title>
 </head>
 	<body>
-	<input type="checkbox" id="toggle">
-			<label for="toggle" class="lable">&#9776;</label>
-			<nav class="cont3">
-				<div class="navv">
-					<a href="index.php"><nav class="navi">Home</nav></a>
-					<a href="sign_in.php"><nav class="navi">Sign in</nav></a>
-					<a href="hlutir.php"><nav class="navi">Activities</nav></a>
-					<a href="sign_up.php"><nav class="navi">Sign up</nav></a>
-					<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {echo '<a href="log_out.php"><nav class="navi navi-4 navi-y">Sign out</nav></a>';} ?>
-				</div>
-			</nav>
+	
 	<div class="contallt">
-		<h1 class="tit">gamescom 2017</h1>
+		<h1 class="tit">gamescom-cologne 2017</h1>
+	<div class="flexid">
 		<div class="cont">
 			<div class="cont3text">
 				<span class="tital"><a href="https://en.wikipedia.org/wiki/Gamescom" target="blank">So what is gamescom?</a></span>
@@ -48,10 +39,29 @@
 				 <span class="tital">On the current line-up we have</span>
 				 <ul>
 				 	<li>Booths to try a few upcoming games.</li>
-				 	<li>Booths to try a few hardware items(VR, the next upcoming consoles)</li>
+				 	<li>Booths to try a few hardware items(For example: VR and the next upcoming consoles)</li>
 				 </ul>
 			</div>
 		</div>
+			<div class="hlutir">
+				<input type="checkbox" id="toggle">
+				<label for="toggle" class="lable">&#9776;</label>
+				<nav class="cont3">
+					<div class="navv">
+						<a href="index.php"><nav class="navi">Home</nav></a>
+						<a href="sign_in.php"><nav class="navi">Sign in</nav></a>
+						<a href="hlutir.php"><nav class="navi">Activities</nav></a>
+						<a href="sign_up.php"><nav class="navi">Sign up</nav></a>
+						<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {echo '<a href="log_out.php"><nav class="navi navi-4 navi-y">Sign out</nav></a>';} ?>
+					</div>
+				</nav>
+			</div>
 	</div>
+		<div class="locat cont3text">
+			<b>Location of the event, click on it to open Google maps for better information of the area.</b>
+			<div class="mapp">				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.767957168168!2d6.981784689724872!3d50.946504228790914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf25c3f081102f%3A0x734f38e5e1f044bb!2sKoelnmesse+GmbH!5e0!3m2!1sen!2sis!4v1490979568635"  frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
 	</body>
 </html>

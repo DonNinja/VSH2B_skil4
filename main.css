@@ -15,7 +15,7 @@ body {
 @media all and (max-width: 30em) {
 	.contallt {
 		max-width: 95%;
-		margin-top: 3em;
+		margin-top: 2em;
 	}
 	.tit {
 		background: rgba(0, 191, 255, 1);
@@ -52,8 +52,8 @@ body {
 	  cursor: pointer;
 	  font-size: 18px;
 	  padding: 5px 9px;
-	  bottom: 0;
-	  left: 0;
+	  bottom: 10px;
+	  left: 10px;
 	  text-align: center;
 	  font-stretch: 150%;
 	  width: 20px;
@@ -69,20 +69,19 @@ body {
 	}
 	.cont3 {
 		position: fixed;
-		bottom: 2em;
+		bottom: 42px;
 		left: 0;
 		width: 100%;
 	  	max-height: 0;
 	 	overflow: hidden;
 		transition: all 1.5s ease;
 		border: none;
-
 	}
 	#toggle:checked ~ .cont3 {
 		max-height: 10em;
 		width: 100%;
 		position: fixed;
-		bottom: 2em;
+		bottom: 42px;
 		left: 0;
 		transition: all 1.5s ease;
 	}
@@ -125,6 +124,16 @@ body {
 		margin: auto;
 		margin-top: .5em;
 	}
+	.mapp {
+		width: 90%;
+		padding-left: 10%;
+		right: 0;
+		padding-top: 2em;
+	}
+	.locat {
+		text-align: center;
+		margin-top: 2em;
+	}
 }
 @media all and (min-width: 30em) and (max-width: 769px) {
 	.contallt {
@@ -163,8 +172,8 @@ body {
 	  cursor: pointer;
 	  font-size: 18px;
 	  padding: 5px 9px;
-	  top: 0;
-	  left: 0;
+	  top: 10px;
+	  left: 10px;
 	  text-align: center;
 	  font-stretch: 150%;
 	  width: 20px;
@@ -182,7 +191,7 @@ body {
 	.cont3 {
 		position: fixed;
 		top: 0;
-		left: 40px;
+		left: 50px;
 		width: 0;
 	  	max-height: 100%;
 	 	overflow: hidden;
@@ -193,7 +202,7 @@ body {
 		width: 20%;
 		position: fixed;
 		top: 0;
-		left: 40px;
+		left: 50px;
 		transition: all 1.5s ease;
 	}
 	#toggle:checked ~ nav {
@@ -215,18 +224,20 @@ body {
 	 	border-bottom: 0;
 	}
 	.navi {
-		height: 80px;
+		height: 70px;
 		text-align: center;
-		line-height: 80px;
+		line-height: 70px;
 		vertical-align: middle;
 	}
 	form {
 		background: rgba(0, 191, 255, 1);
+		margin: auto;
 		padding: 2em;
 		border: 1px black solid;
 		border-radius: 20px;
 		text-align: center;
-		margin-top: 10%;
+		margin-top: 15%;
+		max-width: 80%;
 	}
 	a:active {
 		text-decoration: none;
@@ -236,19 +247,38 @@ body {
 		margin: auto;
 		margin-top: .5em;
 	}
+	iframe {
+		width: 100%;
+	}
+	.mapp {
+		padding-top: 2em;
+	}
+	.locat {
+		text-align: center;
+		margin-top: 2em;
+	}
 }
-@media all and (min-width: 769px) and (max-width: 1030px) {
+@media all and (min-width: 769px) and (max-width: 959px) {
 	body {
-		display: flex;
 		max-width: 80%;
-		margin: 0 auto;
+		margin: auto;
+	}
+	form {
+		display: inline-block;
+		background: rgba(0, 191, 255, 1);
+		padding: 2em;
+		border: 1px black solid;
+		border-radius: 20px;
+		text-align: center;
+		margin: auto;
+		transform: scale(1.4);
+		margin-top: 25%;
 	}
 	.tit {
-		max-width: 100%;
+		width: 100%;
 	}
 	.cont {
-		position: relative;
-		max-width: 60%;
+		max-width: 100%;
 		margin-top: 3em;
 		flex: 1;
 	}
@@ -256,16 +286,16 @@ body {
 		background: rgba(0, 191, 255, 1);
 		font-size: 150%;
 	}
-	.cont3, .cont3text {
+	.hlutir, .cont3text {
 		background: rgba(0, 191, 255, 1);
 		margin-top: 0em;
 	}
 	.cont3text {
 		padding: .5em;
 	}
-	.cont3 {
+	.hlutir {
 		background: rgba(0, 191, 255, 1);
-		max-width: 20%;
+		max-width: 40%;
 		flex: 2;
 	}
 	.tital {
@@ -283,7 +313,6 @@ body {
 		width: 100%;
 	}
 	nav {
-		max-width: 20%;
 		text-align: center;
 	 	height: 100%;
 	 	display: block;
@@ -294,5 +323,103 @@ body {
 		text-align: center;
 		line-height: 40px;
 		vertical-align: middle;
+	}
+	.flexid {
+		display: flex;
+	}
+	iframe {
+		width: 100%;
+		height: auto;
+	}
+	.mapp {
+		padding-top: 2em;
+	}
+	.locat {
+		text-align: center;
+		margin-top: 2em;
+	}
+}
+@media all and (min-width: 960px)  {
+	body {
+		max-width: 80%;
+		margin: auto;
+		flex-direction: row;
+	}
+	form {
+		display: inline-block;
+		background: rgba(0, 191, 255, 1);
+		padding: 2em;
+		border: 1px black solid;
+		border-radius: 20px;
+		text-align: center;
+		margin: auto;
+		transform: scale(1.4);
+		margin-top: 25%;
+	}
+	.tit {
+		width: 100%;
+	}
+	.cont {
+		max-width: 55%;
+		margin-top: 3em;
+		flex: 1;
+	}
+	.tit {
+		background: rgba(0, 191, 255, 1);
+		font-size: 150%;
+	}
+	.hlutir, .cont3text {
+		background: rgba(0, 191, 255, 1);
+		margin-top: 0em;
+	}
+	.cont3text {
+		padding: .5em;
+	}
+	.hlutir {
+		background: rgba(0, 191, 255, 1);
+		max-width: 35%;
+		flex: 2;
+	}
+	.tital {
+		font-size: 115%;
+		text-align: center;
+		text-decoration: underline;
+	}
+	.lable, #toggle {
+		display: none;
+	}
+	.navv {
+		list-style: none;
+		margin: 0px 0 0 0;
+		padding: 0;
+		width: 100%;
+	}
+	nav {
+		text-align: center;
+	 	height: 100%;
+	 	display: block;
+		border: 1px solid #cecfd5;
+	}
+	.navi {
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		vertical-align: middle;
+	}
+	.flexid {
+		display: flex;
+		flex-direction: row;
+	}
+	iframe {
+		width: 100%;
+	}
+	.mapp {
+		padding-top: 2em;
+	}
+	.locat {
+		text-align: center;
+		background: rgba(0, 191, 255, 1);
+		margin-top: 2em;
+		text-decoration: bold;
 	}
 }
