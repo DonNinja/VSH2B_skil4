@@ -379,6 +379,7 @@ body {
 		background: rgba(0, 191, 255, 1);
 		max-width: 35%;
 		flex: 2;
+		margin-top: 3em;
 	}
 	.tital {
 		font-size: 115%;
